@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGoBackToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/custom_card_home"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:text="Back">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Section"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"
+        android:background="@drawable/custom_card_popular"
+        android:hint="Name"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="24dp"
+        android:textStyle="italic"
+        android:padding="16dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/coffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"
+        android:background="@drawable/custom_card_popular"
+        android:hint="Coffee"
+        android:drawableLeft="@drawable/ic_baseline_coffee_24"
+        android:drawablePadding="24dp"
+        android:textStyle="italic"
+        android:padding="16dp">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/custom_card_popular"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sweetness"
+            android:layout_margin="16dp"
+            android:textSize="16dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/sugarGroup"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/lessSugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:paddingHorizontal="24dp"
+                android:textColor="@drawable/radio_text_selected"
+                android:layout_marginHorizontal="16dp">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/normalSugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:paddingHorizontal="24dp"
+                android:textColor="@drawable/radio_text_selected"
+                android:layout_marginHorizontal="12dp">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/extraSugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extra"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:paddingHorizontal="24dp"
+                android:textColor="@drawable/radio_text_selected"
+                android:layout_marginHorizontal="16dp">
+            </RadioButton>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/custom_card_popular"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ice"
+            android:layout_margin="16dp"
+            android:textSize="16dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/iceGroup"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/noIce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:paddingHorizontal="24dp"
+                android:textColor="@drawable/radio_text_selected"
+                android:layout_marginHorizontal="16dp">
+            </RadioButton>
+
+
+            <RadioButton
+                android:id="@+id/yesIce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:background="@drawable/radio_selector"
+                android:button="@drawable/null_radio_button"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:paddingHorizontal="24dp"
+                android:textColor="@drawable/radio_text_selected"
+                android:layout_marginHorizontal="16dp">
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_card_home"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:padding="16dp">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>

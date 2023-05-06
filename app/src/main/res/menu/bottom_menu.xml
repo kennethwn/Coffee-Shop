@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_home_24">
+    </item>
+
+    <item
+        android:id="@+id/menu"
+        android:title="Menu"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_menu_book_24">
+    </item>
+
+    <item
+        android:id="@+id/holder"
+        android:title=""
+        app:showAsAction="ifRoom"
+        android:enabled="false">
+    </item>
+
+    <item
+        android:id="@+id/order"
+        android:title="Order"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_format_order_24">
+    </item>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_settings_24">
+    </item>
+
+</menu>
